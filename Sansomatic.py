@@ -540,6 +540,7 @@ def createWindow(controls, fn):
   myWindow.open()
 
 def rebuild():
+  global master
   masterID = Glyphs.font.selectedLayers[0].associatedMasterId
   master = Glyphs.font.masters[masterID]
   global capHeight
